@@ -22,7 +22,7 @@ Retrieves a band's setlist data using setlist.fm's REST API.
 ## Data Transformation
 1. Splits the data from `/1.0/artists/{mbid}/setLists` REST API endpoint into four tables
     - `meta`: overall information about a concert, could be joined with artists, venues, sets
-    - `artists`: information about the artists. To be joined with data from Spotify API
+    - `artists`: information about the artists. To be joined with data from Spotify API for data enrichment
     - `venues`: information about the concert locations 
     - `sets`: information about songs played during each concert. Contains information about whether it's a cover. 
 
